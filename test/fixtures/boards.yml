@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chores_board: MyString
+  work_board: MyString
+  user: one
+
+two:
+  chores_board: MyString
+  work_board: MyString
+  user: two
