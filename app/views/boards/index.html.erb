@@ -1,2 +1,7 @@
-<h1>Boards#index</h1>
-<p>Find me in app/views/boards/index.html.erb</p>
+<h1>Boards</h1>
+
+<% @boards.each do |board| %>
+  <div>
+    <h3><%= link_to board %></h3>
+  </div>
+<% end %>
