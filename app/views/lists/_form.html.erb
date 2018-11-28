@@ -1,0 +1,7 @@
+<%= form_for [@board, @list] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :priority %>
+  <%= f.text_field :priority %>
+  <%= f.submit %>
+<% end %>
