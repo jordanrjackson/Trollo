@@ -2,10 +2,10 @@ class Board < ApplicationRecord
   belongs_to :user
 
   # Instance Method
-  # board = { first_name: "Jordan", last_name: "Jackson" }
-  # board.full_name
+  # board = { name: "Central vacuum cleaner" }
+  # board.name
   def full_name
-    # "#{self.first_name} #{self.last_name}"
+    # "#{self.name}"
     board = Board.find_by_sql(["
       SELECT name
       FROM boards AS b

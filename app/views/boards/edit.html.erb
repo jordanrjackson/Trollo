@@ -1,3 +1,9 @@
 <h1>Edit Board</h1>
+<hr />
 
-<% render "form" %>
+<% render "form", board: @board %>
+
+<br />
+<%= link_to "View Boards", boards_path, class: "btn blue" %>
+<br />
+<%= link_to "Back", board_path(@board), class: "btn black" %>
