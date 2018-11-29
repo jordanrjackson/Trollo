@@ -54,7 +54,7 @@ class ListsController < ApplicationController
 
   private
     def list_params
-      params.require(:list).permit(:title, :priority)
+      params.require(:list).permit(:name, :priority)
     end
 
     def set_board

@@ -1,6 +1,6 @@
 <h4>Lists Show Page</h4>
 <br />
-<h1><%= @list.title %></h1>
+<h1><%= @list.name %></h1>
 <% @list.tasks.each do |task| %>
-  <%= task.title %>
+  <%= task.name %>
 <% end %>
